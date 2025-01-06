@@ -1,3 +1,6 @@
+**Already deploy in Azure portel**
+https://facedetectionexp.azurewebsites.net/api/facedetection?
+
 **Face Detection System (By Anjani Kumar)**
 <br>
 
