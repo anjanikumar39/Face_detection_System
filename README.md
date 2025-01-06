@@ -1,16 +1,26 @@
 **Face Detection System (By Anjani Kumar)**
 <br>
+
+----------------
+
 **Step 1: Setup environment**
 Open VS (visual studio code), select folder where you want to implement, 
 Create Azure Function New project with HTTP Trigger.
 Then open terminal in VS code then install these packages.
 
-Install Necessary packages:
+**Install Necessary packages:**<br>
 pip install pandas
+<br>
 pip install azure-functions
+<br>
 pip install requests
+<br>
 pip install opencv-python
+<br>
 pip freeze >requirements.txt
+<br>
+
+-------------------
 
 **Step 2: Logic Inside**
 <br>
@@ -29,7 +39,8 @@ The NumPy array is decoded into an OpenCV-compatible image format using cv2.imde
 The image is converted to grayscale (cv2.COLOR_BGR2GRAY) as the Haar cascade works better with grayscale images.
 <br>
 **E) Detect Faces:**
-The detectMultiScale method scans the grayscale image to detect faces based on the following parameters:
+The detectMultiScale method scans the grayscale image to detect faces.<br>
+**Parameters:**
 <br>
 scaleFactor=1.1: Specifies how much the image size is reduced at each image scale.
 <br>
@@ -43,6 +54,9 @@ The function checks the length of the detected faces array:
 Returns True if one or more faces are detected.
 Returns False if no faces are detected.
 <br><br>
+
+---------------------
+
 **Step 3: HTTP Trigger**
 <br>
 **Route Definition:**
@@ -69,6 +83,9 @@ Users can submit a new image URL for analysis after viewing results.
 <br>
 **Deploy:** Deploy it in Azure Function for 24*7 running system.
 <br><br>
+
+---------------------------
+
 **Example:**
 Open Image in Chrome with face and right click on copy image address.
 
@@ -82,5 +99,6 @@ After Result:
 
 ![image](https://github.com/user-attachments/assets/64c87b40-36da-4154-a127-cab45fa09e1f)
 
+---------------------------
 
-
+Thanks For Reading.
